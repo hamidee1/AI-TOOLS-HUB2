@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI Tools Hub: The ultimate ranked directory of AI tools.">
+    <title>AI Tools Hub - Ranked Directory of AI Tools</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Arabic:wght@400;500;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['"Inter"', 'sans-serif'], arabic: ['"Noto Sans Arabic"', 'sans-serif'], },
+                    colors: {
+                        'primary': '#6D28D9',      // Vibrant Violet (for buttons)
+                        'secondary': '#FBBF24',    // Rich Gold (for ranking number)
+                        'light-bg': '#F9FAFB',      // Off-white
+                        'dark-bg': '#0B0E14',       // Very Dark Blue/Black
+                        'light-card': '#FFFFFF',
+                        'dark-card': '#1E293B',    // Dark Slate Blue
+                        'light-text': '#111827',
+                        'dark-text': '#E5E7EB',    // Light Gray for text
+                    }
+                }
+            }
+        }
+        // Always force dark mode for this design
+        document.documentElement.classList.add('dark');
+        localStorage.setItem('theme', 'dark');
+    </script>
+</head>
+<body class="bg-dark-bg text-dark-text">
+
+    <!-- Header (Optional for this design, can be removed) -->
+    <header id="main-header" class="w-full"></header>
+
+    <!-- App Container where pages will be injected -->
+    <main id="app" class="w-full"></main>
+    
+    <!-- Footer (Optional, can be removed for a cleaner look) -->
+    <footer id="main-footer" class="py-8 text-center text-gray-600"></footer>
+
+    <!-- Scripts -->
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
